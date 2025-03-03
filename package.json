@@ -1,0 +1,29 @@
+{
+  "name": "duobridge",
+  "version": "1.0.0",
+  "description": "Hypixel Guild Duo Bridge",
+  "main": "dist/bot/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --env-file=.env dist/bot/main.js",
+    "build-dev": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist/"
+  },
+  "dependencies": {
+    "@sapphire/snowflake": "^3.5.5",
+    "dotenv": "^16.4.7",
+    "mineflayer": "^4.26.0",
+    "prismarine-block": "^1.21.0",
+    "prismarine-chat": "^1.11.0",
+    "prismarine-chunk": "^1.38.1",
+    "prismarine-nbt": "^2.7.0",
+    "prismarine-windows": "^2.9.0",
+    "prismarine-world": "^3.6.3",
+    "protodef": "^1.18.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  },
+  "author": "xoSorky/Sorky"
+}
