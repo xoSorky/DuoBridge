@@ -81,8 +81,10 @@ class DiscordBot {
 
         const embed = new EmbedBuilder()
             .setColor(0x00AAFF)
-            .setAuthor({ name: username, iconURL: 'https://mc-heads.net/avatar/' + username })
+            .setAuthor({ name: username, iconURL: `https://mc-heads.net/avatar/${username}` })
+            .setThumbnail(`https://mc-heads.net/avatar/Sorky`)
             .setDescription(message)
+            .setFooter({ text: 'Made by Sorky <3' })
             .setTimestamp();
 
         await channel.send({ embeds: [embed] });
